@@ -13,6 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Application"
+rootProject.name = "com.jedison"
 include ':app'
-include ':app:main'
+include ':app:Lighbulb'
+include ':Lightbulb'

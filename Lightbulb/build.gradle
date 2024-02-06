@@ -8,14 +8,11 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.jedisonknights.lightbulb"
         minSdk 28
         //noinspection ExpiredTargetSdkVersion
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -27,6 +24,16 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId "com.jedisonknights"
+            artifactID "lightbulb"
+            version "0.0.0-pre-alpha"
+        }
     }
 }
 

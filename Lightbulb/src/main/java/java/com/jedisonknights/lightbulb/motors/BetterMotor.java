@@ -1,4 +1,4 @@
-package com.jedisonknights.lightbulb.motors;
+package java.com.jedisonknights.lightbulb.motors;
 
 import com.qualcomm.robotcore.hardware.DcMotorController;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
